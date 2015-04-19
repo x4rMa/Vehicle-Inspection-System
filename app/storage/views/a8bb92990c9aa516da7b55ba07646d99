@@ -1,0 +1,29 @@
+
+<div class="form-group <?php echo ($errors->has('title')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('titletitle','Title:'); ?>
+
+	<?php echo Form::text('title', Input::old('title'), array("class"=>"form-control", 'placeholder'=>'Title') ); ?>
+
+</div>
+
+
+<div class="form-group <?php echo ($errors->has('description')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('description','Description:'); ?>
+
+	<?php echo Form::textarea('description', Input::old('description'), array("class"=>"form-control", 'placeholder'=>'Write a brief description') ); ?>
+
+</div>
+
+<?php if($method == "PUT"): ?>
+	<p>Current PDF Report: <a href="<?php echo URL::asset('PDF Reports/'.$pdfreport->file); ?>"><?php echo $pdfreport->file; ?></a> <small>(If you want to change this, please upload another one, otherwise leave it as it is.)</small>
+<?php endif; ?>
+
+<div class="form-group <?php echo ($errors->has('file')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('file','PDF Report: (Allowed format: PDF only. Max Size: 5 MB)'); ?>
+
+	<?php echo Form::file('file', null,array("class"=>"form-control") ); ?>
+
+</div>
+
+
+	<?php echo Form::submit($buttonText, array('class'=>'btn btn-primary')); ?>

@@ -1,0 +1,81 @@
+ 
+
+
+<?php $__env->startSection('content'); ?>
+
+		<p class="text-small margin-bottom-20">
+			<?php if(Session::has('success')): ?>
+				<div class="alert alert-success"><?php echo Session::get('success'); ?></div>
+			<?php elseif(Session::has('error')): ?>
+				<div class="alert alert-danger"><?php echo Session::get('error'); ?></div>
+			<?php endif; ?>
+		</p>
+
+<table data-order='[[ 0, "desc" ]]' data-page-length='25' class="table table-striped table-bordered table-hover" id="example" >
+	<thead>
+		<tr>
+			<th class="center">#</th>
+			<th>Model</th>
+			<th>Make</th>
+			<th>Client Name</th>
+			<th>Prefered Inspection Date</th>
+			<?php if(!$status): ?>
+			<th>Initial Inspection</th>
+			<th>Full Inspection Report</th>
+			<?php else: ?>
+			<?php if(Auth::user()->isAdmin()): ?>
+			<th>Certificate</th>
+			<?php endif; ?>
+			<?php endif; ?>
+		</tr>
+	</thead>
+	<tbody>
+		<?php foreach($vehicleinspection as $vehicle): ?>
+		<tr>
+			<td class="center"><?php echo $vehicle->id; ?></td>
+			<td><a href="<?php echo URL::to('vehiclesinspection/'.$vehicle->id); ?>"><?php echo $vehicle->make; ?></a></td>
+			<td><?php echo $vehicle->model; ?></td>
+			<td class="hidden-xs"><?php echo $vehicle->firstname.' '.$vehicle->lastname; ?></td>
+			<td><?php echo substr($vehicle->inspection_date,0,10); ?></td>
+			<?php if(!Auth::user()->isGeneralUser()): ?>
+				<?php if(!$status): ?>
+				<td class="center">
+					<div class="visible-md visible-lg hidden-sm hidden-xs pull-left">
+						<a href="<?php echo URL::to('vehiclesinspection/'.$vehicle->id.'/edit'); ?>" class="btn btn-primary btn-xs" tooltip-placement="top" tooltip="Edit">Update</a>
+					</div>
+				</td>
+				<td class="center">
+					<div class="visible-md visible-lg hidden-sm hidden-xs pull-left">
+						<a href="<?php echo URL::to('vehicle/'.$vehicle->id.'/report'); ?>" class="btn btn-primary btn-xs" tooltip-placement="top" tooltip="Edit">Update</a>
+					</div>
+				</td>
+				<?php else: ?>
+					<?php if(Auth::user()->isAdmin()): ?>
+					<td>
+						<?php if( Certificate::where('vehicle_id', $vehicle->id)->count() == 0 ): ?>
+						<div class="visible-md visible-lg hidden-sm hidden-xs">
+								<a href="<?php echo URL::to('vehicle/'.$vehicle->id.'/issuecert'); ?>" class="btn btn-info btn-xs" tooltip-placement="top" tooltip="Edit">Issue Cert</a>
+						</div>
+						<?php else: ?>
+						<div class="visible-md visible-lg hidden-sm hidden-xs">
+								<a href="<?php echo URL::to('vehicles/certificates/'.$vehicle->id.'/download'); ?>"> <?php echo Certificate::where('vehicle_id', $vehicle->id)->first()->certno; ?> </a> 
+						</div>
+						<?php endif; ?>
+					</td>
+					<?php endif; ?>
+				<?php endif; ?>
+			<?php endif; ?>
+		</tr>
+		<?php endforeach; ?>
+	</tbody>
+</table>
+			
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('dataTablesjs'); ?>
+<script type="text/javascript" charset="utf-8" language="javascript" src="http://datatables.net/release-datatables/media/js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" language="javascript" src="http://datatables.net/release-datatables/media/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf-8" language="javascript" src="http://datatables.net/media/blog/bootstrap_2/DT_bootstrap.js"></script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,56 @@
+<?php $__env->startSection('content'); ?>
+
+		<p class="text-small margin-bottom-20">
+			<?php if(Session::has('success')): ?>
+			<div class="alert alert-success">
+				<?php echo Session::get('success'); ?>
+
+			</div>
+			<?php endif; ?>
+		</p>
+	
+
+<table class="table table-hover" id="sample-table-1">
+	<thead>
+		<tr>
+			<th class="center">#</th>
+			<th>Location Name</th>
+			<th class="hidden-xs">location Charge</th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php foreach($locations as $location): ?>
+		<tr>
+			<td class="center"><?php echo $location->id; ?></td>
+			<td class="hidden-xs"><?php echo $location->location_name; ?></td>
+			<td><?php echo $location->location_charge; ?></td>
+
+			<?php if(!Auth::user()->isInspector() && (!Auth::user()->isGeneralUser() )): ?>
+			<td class="center">
+				<div class="visible-md visible-lg hidden-sm hidden-xs">
+					<a href="<?php echo URL::to('locations/'.$location->id.'/edit'); ?>" class="btn btn-primary btn-xs" tooltip-placement="top" tooltip="Edit">Edit</a>
+					
+				</div>
+			</td>
+			<td>
+				<?php echo Form::open(array('style'=>'margin:0;','method'=>'delete','action'=> array('LocationController@destroy', $location->id))); ?>
+
+				 	<button class = 'btn btn-danger btn-xs' type="submit">Delete</button>                      
+				<?php echo Form::close(); ?>
+
+			</td>
+			<?php endif; ?>
+			
+		</tr>
+		<?php endforeach; ?>
+		
+	</tbody>
+</table>
+
+<span class="pull-right"><?php echo $locations->links(); ?></span>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

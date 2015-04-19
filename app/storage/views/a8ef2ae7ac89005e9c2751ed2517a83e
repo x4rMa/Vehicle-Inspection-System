@@ -1,0 +1,122 @@
+<div class="form-group <?php echo ($errors->has('mileage')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('mileage','Mileage:'); ?>
+
+	<?php echo Form::text('mileage', Input::old('mileage'), array("class"=>"form-control", 'placeholder'=>'Mileage.') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('istatus')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('istatus','I Status:'); ?>
+
+	<?php echo Form::text('istatus', Input::old('istatus'), array("class"=>"form-control",'placeholder'=>'I Status') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('pstatus')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('pstatus','P Status:'); ?>
+
+	<?php echo Form::text('pstatus', Input::old('pstatus'), array("class"=>"form-control",'placeholder'=>'P Status') ); ?>
+
+</div>
+
+<!-- <div class="form-group <?php echo ($errors->has('certno')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('certno','Certificate Number:'); ?>
+
+	<?php echo Form::text('certno', Input::old('certno'), array("class"=>"form-control",'placeholder'=>'certno') ); ?>
+
+</div> -->
+
+<div class="form-group <?php echo ($errors->has('comment')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('comment','Comment:'); ?>
+
+	<?php echo Form::text('comment', Input::old('comment'), array("class"=>"form-control",'placeholder'=>'comment') ); ?>
+
+</div>
+													
+<div class="form-group <?php echo ($errors->has('reistatus')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('reistatus','Re - Status:'); ?>
+
+	<?php echo Form::text('reistatus', Input::old('reistatus'), array("class"=>"form-control", 'placeholder'=>'Re - Status') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('inspe_comment')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('inspe_comment','Inspection Comment:'); ?>
+
+	<?php echo Form::text('inspe_comment', Input::old('inspe_comment'), array("class"=>"form-control", 'placeholder'=>'Inspection Comment') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('amount_paid')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('amount_paid','Amount Paid:'); ?>
+
+	<?php echo Form::text('amount_paid', Input::old('amount_paid'), array("class"=>"form-control", 'placeholder'=>'Amount Paid') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('reinspe_amount')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('reinspe_amount','Reinspection Amount:'); ?>
+
+	<?php echo Form::text('reinspe_amount', Input::old('reinspe_amount'), array("class"=>"form-control", 'placeholder'=>'Reinspection Amount:') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('vvalue')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('vvalue','Vehicle Value:'); ?>
+
+	<?php echo Form::text('vvalue', Input::old('vvalue'), array("class"=>"form-control", 'placeholder'=>'Vehicle Value') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('issue_date')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('issue_date','Issue Date:'); ?>
+
+	<?php echo Form::text('issue_date', Input::old('issue_date'), array("class"=>"form-control datepicker", 'placeholder'=>'Issue Date') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('inspedate')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('inspedate','Inspection Date:'); ?>
+
+	<?php echo Form::text('inspedate', Input::old('inspedate'), array("class"=>"form-control datepicker", 'placeholder'=>'Inspection Date') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('weekreport')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('weekreport','Week Report:'); ?>
+
+	<?php echo Form::textarea('weekreport', Input::old('weekreport'), array("class"=>"form-control", 'placeholder'=>'Week Report') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('monthreport')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('monthreport','Month Report:'); ?>
+
+	<?php echo Form::textarea('monthreport', Input::old('monthreport'), array("class"=>"form-control", 'placeholder'=>'Month Report') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('odometreunit')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('odometreunit','Odometre Unit:'); ?>
+
+	<?php echo Form::text('odometreunit', Input::old('odometreunit'), array("class"=>"form-control", 'placeholder'=>'Odometre Unit') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('inspecentre')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('inspecentre','Inspection Centre:'); ?>
+
+	<?php echo Form::text('inspecentre', Input::old('inspecentre'), array("class"=>"form-control", 'placeholder'=>'Inspection Centre') ); ?>
+
+</div>
+
+<div class="form-group <?php echo ($errors->has('status')) ? "has-error" : ""; ?>">
+	
+	<input type="checkbox" name="status" style="margin:0px;">
+
+	<?php echo Form::label('inspecentre','I confirm that this vehicle is ready to be issued with a certificate:'); ?>
+
+</div>
+									
+
+<?php echo Form::submit('Submit', array('class'=>'btn btn-primary')); ?>

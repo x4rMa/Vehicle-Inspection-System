@@ -1,0 +1,35 @@
+<?php $__env->startSection('content'); ?>
+
+<div class="panel panel-white">
+	<div class="panel-heading">
+		<h5 class="panel-title">Add New Report</h5>
+	</div>
+	<div class="panel-body">
+		<p class="text-small margin-bottom-2">
+		
+		<?php if($errors->has()): ?>
+		<div class="alert alert-danger">
+			<ul>
+				<?php foreach($errors->all() as $error): ?>
+					<li><?php echo $error; ?></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+		<?php endif; ?>
+	</p>
+		<?php echo Form::model($pdfreport, array('url'=> $url, 'method'=> $method, 'role'=>'form', 'files' => true)); ?>
+
+		
+		<?php $buttonText = ($method == 'POST') ? "Add Report" : "Update Report"; ?>
+
+			<?php echo $__env->make('pdfreports._form', [$buttonText], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+			
+		<?php echo Form::close(); ?>
+
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+
+
+<?php echo $__env->make('template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

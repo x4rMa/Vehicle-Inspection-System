@@ -1,0 +1,89 @@
+[03-Apr-2015 17:15:01 Africa/Nairobi] PHP Fatal error:  Class 'GuzzleHttp\Client' not found in /home/eaasjpnew/public_html/eaas/vendor/laravel/framework/src/Illuminate/Mail/Transport/MailgunTransport.php on line 121
+[04-Apr-2015 11:51:28 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/eaas/app/storage/views/455e6c35f249aa7eaa038e47fb6d8e82 on line 8
+[04-Apr-2015 11:51:47 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/eaas/app/storage/views/455e6c35f249aa7eaa038e47fb6d8e82 on line 8
+[04-Apr-2015 12:19:04 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/eaas/app/storage/views/455e6c35f249aa7eaa038e47fb6d8e82 on line 8
+[04-Apr-2015 12:23:46 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/eaas/app/storage/views/455e6c35f249aa7eaa038e47fb6d8e82 on line 8
+[04-Apr-2015 12:26:14 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/eaas/app/storage/views/355eb0c9764a06d91a1376602ff62db5 on line 110
+[04-Apr-2015 12:26:16 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/eaas/app/storage/views/355eb0c9764a06d91a1376602ff62db5 on line 110
+[04-Apr-2015 12:31:43 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/eaas/app/storage/views/455e6c35f249aa7eaa038e47fb6d8e82 on line 8
+[04-Apr-2015 13:11:27 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '{' in /home/eaasjpnew/public_html/eaas/app/custom/EventListeners.php on line 13
+[04-Apr-2015 13:11:57 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'URL' (T_STRING) in /home/eaasjpnew/public_html/eaas/app/custom/EventListeners.php on line 13
+[05-Apr-2015 09:03:24 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/14a90a6c328d70cf14cfe80ca9bbe776 on line 8
+[05-Apr-2015 09:03:34 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/14a90a6c328d70cf14cfe80ca9bbe776 on line 8
+[05-Apr-2015 09:04:03 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/14a90a6c328d70cf14cfe80ca9bbe776 on line 8
+[05-Apr-2015 09:04:16 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/14a90a6c328d70cf14cfe80ca9bbe776 on line 8
+[05-Apr-2015 09:12:55 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/14a90a6c328d70cf14cfe80ca9bbe776 on line 8
+[05-Apr-2015 09:53:03 Africa/Nairobi] PHP Fatal error:  Cannot redeclare UserController::loginpost() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/UserController.php on line 412
+[05-Apr-2015 09:53:25 Africa/Nairobi] PHP Fatal error:  Cannot redeclare UserController::loginpost() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/UserController.php on line 412
+[05-Apr-2015 09:54:11 Africa/Nairobi] PHP Fatal error:  Cannot redeclare UserController::loginpost() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/UserController.php on line 412
+[05-Apr-2015 19:38:04 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 95
+[05-Apr-2015 19:38:06 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 95
+[05-Apr-2015 21:14:26 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/1a92725f55db4797611af16b15f729cf on line 55
+[05-Apr-2015 21:14:50 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/1a92725f55db4797611af16b15f729cf on line 55
+[05-Apr-2015 21:15:01 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/1a92725f55db4797611af16b15f729cf on line 55
+[05-Apr-2015 23:07:21 Africa/Nairobi] PHP Parse error:  syntax error, unexpected '}' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 240
+[06-Apr-2015 00:05:49 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 00:05:50 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 00:07:34 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 00:07:36 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 00:07:37 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 00:07:54 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 00:07:55 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 00:08:14 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 00:08:15 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:45:07 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:45:12 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:45:22 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:45:25 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:45:30 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:45:31 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:45:55 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:45:57 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:46:11 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:46:12 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:50:01 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:50:03 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:50:16 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:50:18 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:50:26 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:50:27 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:50:49 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 15:50:50 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 16:00:08 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 16:00:10 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 16:01:29 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 16:01:31 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 16:02:57 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 16:03:01 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 16:04:44 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[06-Apr-2015 16:04:46 Africa/Nairobi] PHP Fatal error:  Undefined class constant 'id' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 104
+[07-Apr-2015 09:40:53 Africa/Nairobi] PHP Fatal error:  Call to a member function isAdmin() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/14a90a6c328d70cf14cfe80ca9bbe776 on line 8
+[07-Apr-2015 11:49:51 Africa/Nairobi] PHP Parse error:  syntax error, unexpected end of file in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 237
+[08-Apr-2015 13:07:09 Africa/Nairobi] PHP Fatal error:  Call to a member function delete() on null in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleController.php on line 350
+[08-Apr-2015 13:08:41 Africa/Nairobi] PHP Fatal error:  Call to a member function delete() on null in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleController.php on line 350
+[08-Apr-2015 13:09:35 Africa/Nairobi] PHP Fatal error:  Call to a member function delete() on null in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleController.php on line 350
+[08-Apr-2015 13:12:05 Africa/Nairobi] PHP Fatal error:  Call to a member function delete() on null in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleController.php on line 348
+[08-Apr-2015 13:12:09 Africa/Nairobi] PHP Fatal error:  Call to a member function isGeneralUser() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/1be4b011bbec927ac7a1e576e2ad4981 on line 21
+[08-Apr-2015 13:12:27 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 97
+[08-Apr-2015 13:12:30 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 97
+[08-Apr-2015 14:02:24 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'User' (T_STRING), expecting ',' or ';' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/cb40d27447c276c92e9de75814255412 on line 35
+[08-Apr-2015 14:02:26 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'User' (T_STRING), expecting ',' or ';' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/cb40d27447c276c92e9de75814255412 on line 35
+[08-Apr-2015 14:02:51 Africa/Nairobi] PHP Parse error:  syntax error, unexpected 'User' (T_STRING), expecting ',' or ';' in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/cb40d27447c276c92e9de75814255412 on line 35
+[08-Apr-2015 14:46:49 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 97
+[08-Apr-2015 14:46:51 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 97
+[08-Apr-2015 14:48:10 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 97
+[08-Apr-2015 14:48:14 Africa/Nairobi] PHP Fatal error:  Call to a member function isClient() on null in /home/eaasjpnew/public_html/admin/eaas/app/storage/views/7d94adc25440b45efc86ea77a65cef0d on line 97
+[08-Apr-2015 16:53:28 Africa/Nairobi] PHP Fatal error:  Call to a member function update() on null in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 132
+[08-Apr-2015 16:54:03 Africa/Nairobi] PHP Fatal error:  Call to a member function update() on null in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 132
+[08-Apr-2015 17:15:18 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 134
+[08-Apr-2015 17:16:01 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 134
+[08-Apr-2015 17:16:04 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 134
+[08-Apr-2015 17:16:06 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 169
+[08-Apr-2015 17:20:06 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 134
+[08-Apr-2015 17:24:10 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 188
+[08-Apr-2015 17:25:49 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 188
+[08-Apr-2015 17:26:27 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 188
+[08-Apr-2015 17:26:39 Africa/Nairobi] PHP Fatal error:  Call to undefined method Illuminate\Database\Eloquent\Collection::update() in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 188
+[08-Apr-2015 17:27:50 Africa/Nairobi] PHP Fatal error:  Class 'vehicle' not found in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 185
+[08-Apr-2015 17:27:57 Africa/Nairobi] PHP Fatal error:  Class 'vehicle' not found in /home/eaasjpnew/public_html/admin/eaas/app/controllers/VehicleInspectionController.php on line 185
+[09-Apr-2015 08:22:48 Africa/Nairobi] PHP Fatal error:  Class 'VehicleInsepction' not found in /home/eaasjpnew/public_html/admin/eaas/app/controllers/UserController.php on line 311

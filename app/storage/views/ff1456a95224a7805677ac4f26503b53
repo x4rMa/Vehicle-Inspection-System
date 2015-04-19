@@ -1,0 +1,62 @@
+<?php $__env->startSection('content'); ?>
+
+		<p class="text-small margin-bottom-20">
+			<?php if(Session::has('success')): ?>
+				<div class="alert alert-success"><?php echo Session::get('success'); ?></div>
+			<?php elseif(Session::has('error')): ?>
+				<div class="alert alert-danger"><?php echo Session::get('error'); ?></div>
+			<?php endif; ?>
+		</p>
+	
+<table class="table table-hover" id="sample-table-1">
+	<thead>
+		<tr>
+			<th class="center">#</th>
+			<th>Full Name</th>
+			<th class="hidden-xs">Email</th>
+			<th class="hidden-xs">Phone Number</th>
+			<th>Company</th>
+			<th>City</th>
+			<th>Street</th>
+			<th>Postal</th>
+			<th>Prefecture</th>
+			<th>Status</th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+	
+		<tr>
+			<td class="center"><?php echo $user->id; ?></td>
+			<td class="hidden-xs"><?php echo $user->fullname; ?></td>
+			<td><?php echo $user->email; ?></td>
+			<td><?php echo $user->phone; ?></td>
+			<td><?php echo $user->company; ?></td>
+			<td><?php echo $user->city; ?></td>
+			<td><?php echo $user->street; ?></td>
+			<td><?php echo $user->postal; ?></td>
+			<td><?php echo $user->prefecture; ?></td>
+			<td> <?php if($user->status == 1): ?> <span class="label label-success"> Active </span> <?php else: ?> <span class="label label-inverted"> Not Activated </span> <?php endif; ?> </td>
+			<?php if(!Auth::user()->isInspector() && (!Auth::user()->isGeneralUser() )): ?>
+			<td class="center">
+				<div class="visible-md visible-lg hidden-sm hidden-xs">
+					<a href="<?php echo URL::to('users/'.$user->id.'/edit'); ?>" class="btn btn-primary btn-xs" tooltip-placement="top" tooltip="Edit">Edit</a>
+					
+				</div>
+			</td>
+			<td>
+				<?php echo Form::open(array('style'=>'margin:0;', 'method'=>'delete','action'=> array('UserController@destroy',$user->id))); ?>
+
+				 	<button class = 'btn btn-danger btn-xs' type="submit">Delete</button>                      
+				<?php echo Form::close(); ?>   
+			</td>
+			<?php endif; ?>
+			
+		</tr>
+		
+	</tbody>
+</table>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

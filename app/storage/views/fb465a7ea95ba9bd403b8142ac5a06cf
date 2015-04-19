@@ -1,0 +1,67 @@
+<?php $__env->startSection('content'); ?>
+
+<div class="panel panel-white">
+	<div class="panel-heading">
+		<h5 class="panel-title">Issue Vehicle Certificate</h5>
+	</div>
+	<div class="panel-body">
+		<p class="text-small margin-bottom-20">
+		
+		<?php if($errors->has()): ?>
+		<div class="alert alert-danger">
+			<ul>
+				<?php foreach($errors->all() as $error): ?>
+					<li><?php echo $error; ?></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+		<?php endif; ?>
+	</p>
+
+	<table  class="table table-striped table-bordered table-hover" id="example" >
+	<thead>
+		<tr>
+			<th class="center">#</th>
+			<th>Chassis No</th>
+			<th>Engine CC</th>
+			<th>Make</th>
+			<th>Model</th>
+			<th>Y.O.R</th>
+			<th>Location</th>
+			<th>V.E.C</th>
+			<th>Prefered Inspection Date</th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		
+		<tr>
+			<td class="center"><?php echo $vehicle->id; ?></td>
+			<td class="hidden-xs"><?php echo $vehicle->chasis; ?></td>
+			<td><?php echo $vehicle->enginecc; ?></td>
+			<td><?php echo $vehicle->make; ?></td>
+			<td><?php echo $vehicle->model; ?></td>
+			<td><?php echo $vehicle->yor; ?></td>
+			<td><?php echo $vehicle->location->location_name; ?></td>
+			<td><a href="<?php echo URL::asset('uploads/vec/'.$vehicle->vec); ?>"><?php echo $vehicle->vec; ?></a></td>
+			<td><?php echo substr($vehicle->inspection_date,0,10); ?></td>
+
+		</tr>
+		
+	</tbody>
+</table>
+
+		<?php echo Form::model($vehicle, array('url'=> $url, 'method'=> 'POST', 'role'=>'form', 'files'=> true)); ?>
+
+			<?php echo $__env->make('vehicles._issuecertform', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+		<?php echo Form::close(); ?>
+
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+
+
+
+
+
+<?php echo $__env->make('template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

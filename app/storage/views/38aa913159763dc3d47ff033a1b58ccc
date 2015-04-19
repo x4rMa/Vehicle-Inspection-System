@@ -1,0 +1,10 @@
+
+<div class="form-group <?php echo ($errors->has('chasis')) ? "has-error" : ""; ?>">
+	<?php echo Form::label('certno','Certificate No:'); ?>
+
+	<?php echo Form::text('certno', Input::old('certno'), array("class"=>"form-control", 'placeholder'=>'Certificate No.') ); ?>
+
+</div>
+									
+
+<?php echo Form::submit('Issue Certificate', array('class'=>'btn btn-primary')); ?>
